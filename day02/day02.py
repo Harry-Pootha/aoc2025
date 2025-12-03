@@ -23,8 +23,7 @@ def get_ranges(content: str) -> list[Range]:
         upper = entry.split("-")[1]
         ranges.append(Range(int(lower), int(upper)))
     return ranges
-# 2946824823
-# 4174379265
+
 def split_string_in_chunks(string: str, chunk_size: int) -> list[str]:
     chunks: list[str] = list()
     for i in range(0, len(string), chunk_size):
